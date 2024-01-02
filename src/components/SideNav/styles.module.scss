@@ -1,0 +1,33 @@
+.sideNav {
+  background: #fff;
+  border-right: 1px solid #f0f0f0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 100%;
+  :global {
+    .ant-menu-inline,
+    .ant-menu-vertical,
+    .ant-menu-vertical-left {
+      border: none;
+    }
+    .anticon {
+      width: 12px;
+    }
+  }
+
+  .logo {
+    display: block;
+    height: 65px;
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    color: #1890ff !important;
+    padding: 20px;
+  }
+}
+
+.sideNavCollapsed {
+  .logo {
+    font-size: 12px;
+  }
+}
