@@ -6,7 +6,8 @@ import styles from "./style.module.scss";
 import { Card, Input, Button, Form, Row, Checkbox } from "antd";
 import { useTranslation } from "react-i18next";
 import { login } from "utils/helper/authentication";
-import { Navigate } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
+import { handleSuccessMessage } from "utils/helper/common";
 // import { login } from 'api/authentication';
 // import { handleErrorMessage } from 'helper';
 
@@ -17,9 +18,10 @@ export default function Login() {
   const navigateToSignUp = () => {};
   const handleSubmit = async (payload: any) => {
     login(payload);
+    handleSuccessMessage("Đăng nhập thành công");
   };
 
-  const isAuthenticated = !!Cookies.get('token');
+  const isAuthenticated = !!Cookies.get("token");
   if (isAuthenticated) return <Navigate to="/" />;
 
   return (
@@ -71,12 +73,9 @@ export default function Login() {
               htmlType="button"
               onClick={navigateToSignUp}
             >
-              {t("common.signUp").toUpperCase()}
+              <Link to={"/sign-up"}>{t("common.signUp").toUpperCase()}</Link>
             </Button>
           </Form.Item>
-          <div>
-            <p>Account: admin / 123456</p>
-          </div>
         </Form>
       </Card>
     </div>
