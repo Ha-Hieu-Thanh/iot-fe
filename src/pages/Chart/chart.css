@@ -1,0 +1,15 @@
+.option-row {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    margin: 15px 10px 0 0;
+}
+
+.selected {
+    background-color: cyan !important;
+}
+
+.chart {
+    height: 500px;
+    max-height: 500px;
+}

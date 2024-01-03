@@ -6,6 +6,7 @@ import AuthWrapper from "wrappers/AuthWrapper";
 const Login = lazy(() => import("pages/Login"));
 const SignUp = lazy(() => import("pages/SignUp"));
 const Dashboard = lazy(() => import("pages/Dashboard"));
+const Chart = lazy(() => import("pages/Chart"));
 
 export default function AppWrapper() {
   return (
@@ -16,6 +17,8 @@ export default function AppWrapper() {
         <Route path="/" element={<AuthWrapper />}>
           <Route path="/" element={<Dashboard />} />
           <Route path="/tasks" element={<Tasks />} />
+          <Route path="/chart" element={<Chart />} />
+
         </Route>
       </Routes>
     </div>
