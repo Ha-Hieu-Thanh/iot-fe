@@ -6,6 +6,7 @@ import {
   HomeOutlined,
   TableOutlined,
   SettingOutlined,
+  LineChartOutlined
 } from "@ant-design/icons";
 import styles from "./styles.module.scss";
 import useToggleSideNav from "utils/hooks/useToggleSideNav";
@@ -47,6 +48,12 @@ export default function SideNav() {
         },
       ],
     },
+    {
+      key: "4",
+      text: "Chart",
+      url: "/chart",
+      icon: <LineChartOutlined />,
+    },
   ];
 
   useEffect(() => {
@@ -82,7 +89,7 @@ export default function SideNav() {
         inlineCollapsed={collapsed}
       >
         {routes.map((route) => {
-          console.log("routes", routes);
+          // console.log("routes", routes);
           if (route.children) {
             return (
               <SubMenu key={route.key} icon={route.icon} title={route.text}>
