@@ -27,8 +27,8 @@ export default function SideNav() {
     },
     {
       key: "2",
-      text: "Tasks",
-      url: "/tasks",
+      text: "Subcription",
+      url: "/subcription",
       icon: <TableOutlined />,
     },
     {
@@ -39,12 +39,12 @@ export default function SideNav() {
         {
           key: "3.1",
           text: "Alert Management",
-          url: "/settings/setting1",
+          url: "/settings/alert",
         },
         {
           key: "3.2",
           text: "Location Management",
-          url: "/settings/setting2",
+          url: "/settings/location",
         },
       ],
     },
@@ -79,7 +79,7 @@ export default function SideNav() {
       })}
       style={{ width: collapsed ? 80 : 250, transition: "width 0.3s" }}
     >
-      <Link className={styles.logo} to="/index">
+      <Link className={styles.logo} to="/">
         HOME
       </Link>
       <Menu

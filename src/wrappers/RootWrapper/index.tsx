@@ -1,3 +1,6 @@
+import Alert from "pages/Alert";
+import Subcription from "pages/Subcription";
+import Location from "pages/Location";
 import Tasks from "pages/Tasks";
 import React, { lazy } from "react";
 import { Route, Routes } from "react-router-dom";
@@ -19,6 +22,9 @@ export default function AppWrapper() {
           <Route path="/tasks" element={<Tasks />} />
           <Route path="/chart" element={<Chart />} />
 
+          <Route path="/subcription" element={<Subcription />} />
+          <Route path="/settings/alert" element={<Alert />} />
+          <Route path="/settings/location" element={<Location />} />
         </Route>
       </Routes>
     </div>

@@ -45,7 +45,6 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-
 ├── public
 │   ├── favicon.ico
 │   ├── index.html
@@ -68,8 +67,8 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 │   │   │   ├── index.tsx
 │   │   │   └── styles.module.scss
 │   │   └── SideNav
-│   │       ├── index.tsx
-│   │       └── styles.module.scss
+│   │   ├── index.tsx
+│   │   └── styles.module.scss
 │   ├── constants
 │   │   ├── config.ts
 │   │   └── enum.ts
@@ -78,8 +77,8 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 │   │   ├── i18n.ts
 │   │   ├── index.ts
 │   │   └── locales
-│   │       ├── en.json
-│   │       └── vi.json
+│   │   ├── en.json
+│   │   └── vi.json
 │   ├── index.tsx
 │   ├── pages
 │   │   ├── Login
@@ -89,9 +88,9 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 │   │   │   ├── index.tsx
 │   │   │   └── style.module.scss
 │   │   └── Tasks
-│   │       ├── TaskList.tsx
-│   │       ├── index.tsx
-│   │       └── styles.module.scss
+│   │   ├── TaskList.tsx
+│   │   ├── index.tsx
+│   │   └── styles.module.scss
 │   ├── react-app-env.d.ts
 │   ├── reportWebVitals.ts
 │   ├── setupTests.ts
@@ -106,15 +105,23 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 │   │   ├── socket
 │   │   │   └── index.ts
 │   │   └── upload
-│   │       └── index.ts
+│   │   └── index.ts
 │   └── wrappers
-│       ├── AuthWrapper
-│       │   ├── index.tsx
-│       │   └── styles.module.scss
-│       └── RootWrapper
-│           └── index.tsx
+│   ├── AuthWrapper
+│   │   ├── index.tsx
+│   │   └── styles.module.scss
+│   └── RootWrapper
+│   └── index.tsx
 ├── README.md
 ├── package.json
 ├── tsconfig.json
 ├── tslint.json
 └── yarn.lock
+
+TODO:
+
+- Tab Location, fetch location from server, subcribe or unsubcribe
+- Tab setting (only for admin) {
+  - setting CRUD location
+  - setting get list of alerts
+    }
